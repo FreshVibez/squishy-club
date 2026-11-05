@@ -2,7 +2,7 @@
 
 A pink playground with six moldable squishies and recorded squish/crunch sounds.
 
-[Open the website](https://squishy-club-pink-playground.tawnypecan.chatgpt.site)
+[Open the website on GitHub Pages](https://freshvibez.github.io/squishy-club/)
 
 ## Run locally
 
@@ -20,9 +20,13 @@ Open http://localhost:4173. Drag a squishy to mold it, click or press Space to s
 - `dist/style.css`: styling and responsive layout
 - `dist/app.js`: canvas deformation and Web Audio playback
 - `dist/audio/`: six edited Foley clips and source credits
-- `.openai/hosting.json`: existing Sites hosting configuration
+- `.openai/hosting.json`: original Sites hosting configuration
 
-The live website is hosted on Sites. This repository contains its source; pushing to this GitHub repository does not automatically update the Sites deployment.
+## Hosting
+
+GitHub Pages publishes the root of the `gh-pages` branch over HTTPS. That branch contains the contents of `dist/`, plus `.nojekyll`. To publish changes, update the source on `main` and copy the updated `dist/` contents to the root of `gh-pages`.
+
+The original [Sites deployment](https://squishy-club-pink-playground.tawnypecan.chatgpt.site) is also available and is managed separately.
 
 ## Audio credits
 
